@@ -32,6 +32,7 @@ public class Conexion : Controller {
         return Ok(lista);
     }
 
+
     [HttpGet("mongo")]
     public IActionResult ListarSalonesMongoDb(){
         MongoClient client = new MongoClient(CadenasConexion.MONGO_DB);
